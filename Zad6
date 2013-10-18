@@ -1,4 +1,13 @@
 WstepLabo1Zad6
 ==========
 #include<stdio.h>
-  int
+  int main () {
+  int w; p;
+  wynik = 1;
+  w = wykladnik;
+  while (w>0) {
+  wynik = wynik*podstawa;
+  w = w-1;
+}
+  return 0;
+}
