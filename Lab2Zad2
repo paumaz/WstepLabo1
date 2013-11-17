@@ -1,0 +1,23 @@
+Wstep do programowania
+Laboratorium 2 Zadanie 2;
+Napisać i uruchomić program w C, który wczytuje liczbę naturalną n i drukuje wartość sumy kwadratów
+============================
+#include <stdio.h>
+
+main()
+{
+    
+    int wynik,i,n;
+    
+    printf("Podaj n\n");
+    scanf("%d",&n);
+    wynik = 0;
+    i = 1;
+    
+    while (i <= n) {
+        wynik = wynik+ i*i;
+       i = i+1;
+    }
+   
+   printf("Wynik: %d",wynik);
+}
