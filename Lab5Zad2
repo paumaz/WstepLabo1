@@ -1,0 +1,25 @@
+Wstep do programowania:
+Laboratorium 5 Zadanie 2;
+Program wczytujący kolejno dwie tablice liczb rzeczywistych (najpierw jedną, potem drugą) tej samej długości i drukujący ich iloczyn skalarny
+==================================
+#include <stdio.h>
+int main () {
+        double w=0;
+        int z;
+        scanf("%i", &z);
+        double a[z];
+        double b[z];
+        int i;
+        int j;
+        for (i=0; i<z; i++) {
+                scanf("%lf", &a[i]);
+        for (j=0; j<z; j++) {
+                scanf("%lf", &b[i]);
+                double k=w;
+                w=a[i] * b[j];
+                w=w+k;
+        }
+        }
+        printf("%6.2lf", w);
+        return 0;
+}    
