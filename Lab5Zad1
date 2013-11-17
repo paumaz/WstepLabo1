@@ -1,0 +1,33 @@
+Wstep do programowania:
+Laboratorium 5 Zadanie 1;
+Program wczytujący tablicę liczb rzeczywistych i drukujący zestawienie, ile w niej jest liczb ujemnych, ile zer i ile liczb dodatnich.
+=====================================
+#include <stdio.h>
+ 
+int main()
+{
+    double n;
+    int z;
+    int i=0;
+    int k=0;
+    int m=0;
+    int l=0;
+    scanf("%i", &z);
+ 
+    while (i<z) {
+    scanf("%lf", &n);
+    if (n<0) {
+        k++;
+    }
+    if (n>0) {
+        m++;
+    }
+    if (n==0) {
+        l++;
+    }
+    i++;
+    }
+    printf(" Liczby ujemne:%i \n", k);
+    printf(" Liczby dodatnie:%i \n", m);
+    printf(" Zera:%i \n", l);
+}
