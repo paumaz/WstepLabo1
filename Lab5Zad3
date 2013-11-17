@@ -1,0 +1,27 @@
+Wstep do programowania:
+Laboratorium 5 Zad 3;
+Program wczytujący dwie tablice liczb rzeczywistych tej samej długości i drukujący wynik ich porównania leksykograficznego.
+==================================
+#include <stdio.h>
+int main () {
+    int z;
+    int l;
+    int i;
+    scanf("%i", &z);
+    double a[z];
+    double b[z];
+    for (l=0; l<=z; l++) {
+        scanf("%lf", &a[l]);
+    }
+    for (i=0; i<=z; i++) {
+        scanf("%lf", &b[i]);
+    }
+        if (a[z]>b[z]) {
+            printf("%6.2lf", a[z]);
+        }
+        else {
+            printf("%6.2lf", b[z]);
+        }
+    
+    return 0;
+}   
